@@ -1,0 +1,24 @@
+{
+    "user": "GfGfGfAs",
+    "repo": "pawnmemory",
+    "include_path": "include",
+    "resources": [
+        {
+			"name": "^pawnmemory-.+-linux?.zip$",
+            "platform": "linux",
+            "archive": true,
+            "includes": ["pawnmemory-(.*)"],
+            "plugins": ["pawnmemory-(.*)/pawn-memory.so"]
+        },
+        {
+			"name": "^pawnmemory-.+-win?.zip$",
+            "platform": "windows",
+            "archive": true,
+            "includes": ["pawnmemory-(.*)"],
+            "plugins": ["pawnmemory-(.*)/pawn-memory.dll"]
+        }
+    ],
+    "runtime": {
+        "plugins": ["GfGfGfAs/pawnmemory"]
+    }
+}
