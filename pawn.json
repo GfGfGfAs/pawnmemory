@@ -4,18 +4,18 @@
     "include_path": "include",
     "resources": [
         {
-			"name": "^pawnmemory-.+-linux?.zip$",
+			"name": "linux.tar.gz",
             "platform": "linux",
             "archive": true,
-            "includes": ["pawnmemory-(.*)"],
-            "plugins": ["pawnmemory-(.*)/pawn-memory.so"]
+            "includes": [""],
+            "plugins": ["pawn-memory.so"]
         },
         {
-			"name": "^pawnmemory-.+-win?.zip$",
+			"name": "win.zip",
             "platform": "windows",
             "archive": true,
-            "includes": ["pawnmemory-(.*)"],
-            "plugins": ["pawnmemory-(.*)/pawn-memory.dll"]
+            "includes": [""],
+            "plugins": ["pawn-memory.dll"]
         }
     ],
     "runtime": {
